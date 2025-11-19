@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mi Tiendita Coreana</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>🌸 Mi Tiendita Coreana</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <button id="ver-carrito" class="carrito-btn">Carrito (0)</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Skincare • K-pop • Papelería Kawaii</h2>
+      <p>Compra fácil y manda tu pedido por WhatsApp ✨</p>
+      <a class="cta" href="productos.html">Ver productos</a>
+    </section>
+  </main>
+
+  <!-- Modal Carrito -->
+  <div id="carrito-modal" class="modal hidden">
+    <div class="modal-content">
+      <button id="cerrar-modal" class="close">✕</button>
+      <h3>Tu carrito</h3>
+      <div id="carrito-items"></div>
+      <div id="carrito-total"></div>
+      <div class="modal-actions">
+        <button id="vaciar-carrito" class="btn">Vaciar carrito</button>
+        <button id="enviar-whatsapp" class="btn primary">Enviar pedido por WhatsApp</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="tienda.js"></script>
+</body>
+</html>
