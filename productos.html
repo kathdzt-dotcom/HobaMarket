@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Productos</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header class="site-header">
+  <h1>✨ Productos</h1>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="productos.html">Productos</a>
+    <button id="ver-carrito" class="carrito-btn">Carrito (0)</button>
+  </nav>
+</header>
+
+<main class="container">
+
+  <h2>Nuestros productos</h2>
+
+  <div class="productos-grid">
+
+    <!-- PRODUCTO EJEMPLO 1 -->
+    <div class="producto">
+      <img src="https://via.placeholder.com/200" alt="Producto">
+      <h3>Tónico de Centella</h3>
+      <p class="precio">$280</p>
+      <button class="agregar-carrito"
+              data-nombre="Tónico de Centella"
+              data-precio="280">
+        Agregar al carrito
+      </button>
+    </div>
+
+    <!-- PRODUCTO EJEMPLO 2 -->
+    <div class="producto">
+      <img src="https://via.placeholder.com/200" alt="Producto">
+      <h3>Libreta Kawaii</h3>
+      <p class="precio">$120</p>
+      <button class="agregar-carrito"
+              data-nombre="Libreta Kawaii"
+              data-precio="120">
+        Agregar al carrito
+      </button>
+    </div>
+
+    <!-- PRODUCTO EJEMPLO 3 -->
+    <div class="producto">
+      <img src="https://via.placeholder.com/200" alt="Producto">
+      <h3>Sticker Pack K-pop</h3>
+      <p class="precio">$95</p>
+      <button class="agregar-carrito"
+              data-nombre="Sticker Pack K-pop"
+              data-precio="95">
+        Agregar al carrito
+      </button>
+    </div>
+
+  </div>
+
+</main>
+
+<!-- Modal Carrito -->
+<div id="carrito-modal" class="modal hidden">
+  <div class="modal-content">
+    <button id="cerrar-modal" class="close">✕</button>
+    <h3>Tu carrito</h3>
+    <div id="carrito-items"></div>
+    <div id="carrito-total"></div>
+    <div class="modal-actions">
+      <button id="vaciar-carrito" class="btn">Vaciar carrito</button>
+      <button id="enviar-whatsapp" class="btn primary">Enviar pedido por WhatsApp</button>
+    </div>
+  </div>
+</div>
+
+<script src="tienda.js"></script>
+</body>
+</html>
